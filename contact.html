@@ -7,24 +7,6 @@
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-  function onSubmit(token) {
-    document.getElementById("contact-form").submit();
-  }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("contact-form");
-    const submitButton = document.getElementById("submit-btn");
-
-    form.addEventListener("submit", function(e) {
-      const recaptchaResponse = grecaptcha.getResponse();
-      if (recaptchaResponse.length === 0) {
-        e.preventDefault();
-        alert("Please complete the reCAPTCHA before submitting.");
-      }
-    });
-  });
-</script>
 
 </head>
 <body>
@@ -61,12 +43,14 @@
         </div>
           
 
-        <form action="https://getform.io/f/akkyrnga" method="POST">
+        <form action="https://formsubmit.co/vibhavemail@email.com" method="POST">
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
             <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-            <button type="submit" id="submit-btn">Send Message</button>
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://vibhavmisra.com/thank-you.html">
             <div class="g-recaptcha" data-sitekey="6LddG_wqAAAAAIaBiirYLsVpdePbOSygv7Up-YNq"></div>
+            <button type="submit">Send Message</button>
 
         </form>
     </div>
