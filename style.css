@@ -113,7 +113,7 @@ footer {
 .projects-title {
     position: sticky;
     top: 100px;
-    color: #fff;
+    color: #D9D9D9;
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -202,6 +202,23 @@ footer {
     opacity: 1;
 }
 
+.project-buttons {
+    position: absolute;
+    bottom: 10px; 
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.project:hover .project-buttons {
+    opacity: 1;
+}
+
 .contact-container {
     padding: 80px 20px;
     background-color: #f4f4f4;
@@ -209,6 +226,30 @@ footer {
     max-width: 800px;
     margin: 120px auto 60px auto;
     border-radius: 10px;
+}
+
+.project-btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    background: #3a3a3a;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.github-btn:hover {
+    background: #6e5494; 
+    transform: scale(1.05);
+}
+
+.demo-btn.disabled {
+    background: grey;
+    cursor: not-allowed;
+}
+
+.mosaic-backdrop {
+    position: relative; 
 }
 
 .contact-container h2 {
