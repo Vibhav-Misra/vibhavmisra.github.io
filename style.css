@@ -18,6 +18,8 @@ body {
     color: #000;
     text-align: center;
     transition: background 0.3s, color 0.3s;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 header {
@@ -121,7 +123,7 @@ footer {
     z-index: 1000;
     padding: 15px 0;
     width: 100vw;
-    margin-left: calc(-50vw + 50%); 
+    margin-left: calc(-50vw + 50%);
 }
 
 .projects-grid {
@@ -142,7 +144,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 
 .project img {
     width: 100%;
@@ -170,20 +171,24 @@ footer {
 
 .project-title {
     position: absolute;
-    top: 55px;
-    right: 10px;
+    top: 50%;
     left: 10px;
-    transition: opacity 0.3s ease;
+    right: 10px;
+    transform: translateY(-50%);
+    text-align: center;
     margin: 0;
+    transition: opacity 0.3s ease;
 }
 
 .project-description {
     position: absolute;
-    top: 35px;
-    right: 10px;
+    top: 50%;
     left: 10px;
-    transition: opacity 0.3s ease;
+    right: 10px;
+    transform: translateY(-50%);
+    text-align: center;
     margin: 0;
+    transition: opacity 0.3s ease;
 }
 
 .project-title {
