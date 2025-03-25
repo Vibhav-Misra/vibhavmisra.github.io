@@ -122,9 +122,10 @@ footer {
     background: #2A2A2A;
     z-index: 1000;
     padding: 15px 0;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
+    text-align: center;
 }
+
 
 .projects-grid {
     display: grid;
