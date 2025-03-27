@@ -4,7 +4,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
+
 <body>
     <header id="navbar">
         <h1>Vibhav Misra</h1>
@@ -22,141 +25,91 @@
             <div class="about-image">
                 <img src="assets/images/my_image.jpg" alt="Vibhav Misra" />
             </div>
+
             <div class="about-content">
                 <h2>Hi, I'm Vibhav Misra</h2>
                 <p>
-                    I’m a data science graduate student at Pace University in NYC. My journey into data started in 2020, when I was tracking COVID-19 trends and realized how powerful data can be in driving real-world decisions — that experience sparked my passion for data science.
-                    <br><br>
-                    I studied Computer Science and Engineering with a focus on AI and Machine Learning, and have built projects like <strong>BioML</strong>, a disease prediction website using machine learning, and a <strong>phishing detection system</strong> with real-time URL risk analysis. I’ve also worked on a <strong>depression prediction model</strong>, a data science capstone with predictive analytics, and performed <strong>customer segmentation</strong> using K-means clustering and PCA.
-                    <br><br>
-                    I enjoy working with Python, SQL, Scikit-Learn, Pandas, and Tableau, and I’m especially interested in applying data to solve problems in healthcare and other impactful areas. Right now, I’m focused on learning, building cool projects, and connecting with others who are passionate about tech and data.
-                    <br><br>
-                    Outside of coding, I enjoy photography, exploring NYC’s food scene, and watching sci-fi movies. I’m currently looking for internship opportunities for Summer 2025, and I’d love to connect!
+                    I’m a data science graduate student at Pace University in NYC. My journey into data started in 2020, when I was tracking COVID-19 trends and realized how powerful data can be in driving real-world decisions and that experience sparked my passion for data science.
                 </p>
-            </div>
-        </div>
-        
-        
-        <div class="skills-section">
-            <h2 class="skills-title">Skills</h2>
-        
-            <div class="skills-category">
-                <h3>Programming & Scripting</h3>
-                <div class="skills-grid">
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>R</span>
-                    <span>C++</span>
-                </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Data Analysis & Processing</h3>
-                <div class="skills-grid">
-                    <span>Pandas</span>
-                    <span>NumPy</span>
-                    <span>EDA</span>
-                    <span>Data Preprocessing</span>
-                    <span>Statistical Analysis</span>
-                </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Machine Learning & AI</h3>
-                <div class="skills-grid">
-                    <span>Supervised Learning</span>
-                    <span>Unsupervised Learning</span>
-                    <span>Random Forest</span>
-                    <span>Gradient Boosting</span>
-                    <span>XGBoost</span>
-                    <span>Model Evaluation</span>
-                    <span>Neural Networks</span>
-                    <span>NLP</span>
-                </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Big Data & Cloud Tools</h3>
-                <div class="skills-grid">
-                    <span>Apache Spark</span>
-                    <span>Hadoop</span>
-                    <span>AWS</span>
-                    <span>Google Cloud Platform</span>
-                </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Databases & Storage</h3>
-                <div class="skills-grid">
-                    <span>MySQL</span>
-                    <span>PostgreSQL</span>
-                    <span>MongoDB</span>
-                    <span>HBase</span>
-                    <span>Neo4j</span>
-                </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Data Visualization</h3>
-                <div class="skills-grid">
-                    <span>Matplotlib</span>
-                    <span>Seaborn</span>
-                    <span>Tableau</span>
-                    <span>Power BI</span>
-                    <span>Excel</span>
-                </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Tools & Technologies</h3>
-                <div class="skills-grid">
-                    <span>Jupyter Notebooks</span>
-                    <span>Anaconda</span>
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Linux</span>
-                </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Mathematics & Statistics</h3>
-                <div class="skills-grid">
-                    <span>Probability & Statistics</span>
-                    <span>Linear Algebra</span>
-                    <span>Calculus</span>
-                    <span>Optimization Techniques</span>
-                </div>
-            </div>
 
-            <div class="skills-category">
-                <h3>Web Development</h3>
-                <div class="skills-grid">
-                    <span>HTML5</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Flask</span>
-                    <span>GitHub Pages</span>
+                <div class="fun-facts">
+                    <h3 class="typing-animation">Currently...</h3>
+                    <ul>
+                      <li>📚 Reading: <em>And Then There Were None</em> by Agatha Christie</li>
+                      <li>🎧 Listening to: Lofi + Metal while coding</li>
+                      <li>📍 Exploring: Cheesecakes in NY + Dashboards in Tableau</li>
+                      <li>👀 Looking for: A Summer 2025 internship in data science</li>
+                    </ul>
                 </div>
-            </div>
-        
-            <div class="skills-category">
-                <h3>Soft Skills</h3>
-                <div class="skills-grid">
-                    <span>Problem-Solving</span>
-                    <span>Collaboration</span>
-                    <span>Communication</span>
-                    <span>Time Management</span>
-                    <span>Adaptability</span>
-                </div>
-            </div>
-        </div>
-        
 
+                <div class="coffee-map-section">
+                    <h3>☕ My Favorite NYC Coffee Spots</h3>
+                    <p>Click the pins to see my go-to places for caffeine and coding!</p>
+                    <div id="coffeeMap" class="coffee-map"></div>
+                </div>
+            </div>
+        </div>        
     </div>
     
-
     <footer>
         &copy; 2025 Vibhav Misra. All rights reserved.
     </footer>
+
+    <script>
+        const map = L.map('coffeeMap').setView([40.730587, -73.989900], 12.5); 
+      
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: 'Map data © OpenStreetMap contributors'
+        }).addTo(map);
+      
+        const coffeeSpots = [
+          {
+            name: "McNally Jackson Books Seaport",
+            coords: [40.706827852393495, -74.00285662162906],
+            note: "A lovely book cafe near Pier 17" 
+          },
+          {
+            name: "Birch Coffee",
+            coords: [40.71099190297009, -74.00595133108499],
+            note: "Their Vanilla Latte is Fantastic!"
+          },
+          {
+            name: "Matto Espresso",
+            coords: [40.70966969143007, -74.00788319633227],
+            note: "Cheap, Tasty and Cozy"
+          }, 
+          {
+            name: "Pret A Manger",
+            coords: [40.710297828468995, -74.00980632701813],
+            note: "Delicious Mocha"
+          },
+          {
+            name: "Simpl Coffee",
+            coords: [40.70938446620965, -74.00868354236107],
+            note: "Real Strawberry Latte is Simply The Best!"
+          },
+          {
+            name: "787 Coffee",
+            coords: [40.716868720041724, -74.00347498705489],
+            note: "Horchata Latte is Really Good!"
+          },
+          {
+            name: "Variety Coffee Roasters",
+            coords: [40.711572034052715, -74.00524188837635],
+            note: "Cool Vibes, Good Music and Great Coffee"
+          },
+          {
+            name: "Starbucks Reserve Roastery New York",
+            coords: [40.74175694754462, -74.00456481776618],
+            note: "NOT Your Standard Starbucks"
+          }  
+        ];
+      
+        coffeeSpots.forEach(spot => {
+          L.marker(spot.coords)
+            .addTo(map)
+            .bindPopup(`<strong>${spot.name}</strong><br>${spot.note}`);
+        });
+    </script>
 </body>
 </html>
