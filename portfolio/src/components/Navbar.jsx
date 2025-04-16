@@ -1,26 +1,57 @@
-import React from 'react'
-import './Navbar.css'
-function Navbar() {
+import { useEffect } from "react";
+
+export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+  }, [menuOpen]);
   return (
-    <>
-    <div className='navbar__body'>
-        <div className='navbar__left'>
-          <h1 className='navbar__heading'>Portfolio</h1>
-        </div>
-        <div className='navbar__center'>
-          <ul className='navbar__list'>
-            <li className='navbar__listItems'>Resume</li>
-            <li className='navbar__listItems'>Projects</li>
-            <li className='navbar__listItems'>About</li>
-          </ul>
-        </div>
-        <div className='navbar__right'>
-          <button className='navbar__contactButton'>Contact Me</button>
-        </div>
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          <a href="#home" className="font-mono text-xl font-bold text-white">
+            {" "}
+            pedro<span className="text-blue-500">.tech</span>{" "}
+          </a>
 
-    </div>
-    </>
-  )
-}
+          <div
+            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            &#9776;
+          </div>
 
-export default Navbar
+          <div className="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              className="text-gray-300 hove:text-white transition-colors"
+            >
+              {" "}
+              Home
+            </a>
+            <a
+              href="#about"
+              className="text-gray-300 hove:text-white transition-colors"
+            >
+              {" "}
+              About{" "}
+            </a>
+            <a
+              href="#projects"
+              className="text-gray-300 hove:text-white transition-colors"
+            >
+              {" "}
+              Projects{" "}
+            </a>
+            <a
+              href="#contact"
+              className="text-gray-300 hove:text-white transition-colors"
+            >
+              {" "}
+              Contact{" "}
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
