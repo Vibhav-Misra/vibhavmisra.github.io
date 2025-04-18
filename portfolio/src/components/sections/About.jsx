@@ -1,13 +1,18 @@
 export const About = () => {
-  const frontendSkills = [
-    "React",
-    "Vue",
-    "TypeScript",
-    "TailwindCSS",
-    "Svelte",
+  const frontendSkills = ["JavaScript", "HTML", "CSS"];
+  const backendSkills = [
+    "Python",
+    "SQL",
+    "R",
+    "SAS",
+    "C++",
+    "Flask",
+    "TensorFlow",
+    "Scikit-Learn",
+    "MongoDB",
+    "HDFS",
+    "MapReduce",
   ];
-
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
 
   return (
     <section
@@ -16,99 +21,34 @@ export const About = () => {
     >
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-          {" "}
           About Me
         </h2>
 
         <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-          <p className="text-gray-300 mb-6 leading-relaxed space-y-4">
-            <span className="block">
-              Hi, I'm{" "}
-              <span className="text-white font-semibold">Vibhav Misra</span>{" "}
-              (he/him) — a passionate Data Scientist with a strong foundation in
-              data analytics, machine learning, and artificial intelligence.
-            </span>
-
-            <span className="block">
-              I specialize in building predictive models, analyzing complex
-              datasets, and developing end-to-end data-driven applications. I
-              thrive on solving real-world problems through innovative,
-              data-powered solutions.
-            </span>
-
-            <span className="block">
-              I hold a{" "}
-              <span className="text-white font-medium">
-                Master’s degree in Data Science
-              </span>{" "}
-              from Pace University, New York, and a{" "}
-              <span className="text-white font-medium">
-                Bachelor’s in Computer Science (AI & ML specialization)
-              </span>{" "}
-              from Chandigarh University.
-            </span>
-
-            <span className="block">
-              My technical toolkit includes{" "}
-              <span className="text-white">Python, SQL, R</span>, and tools such
-              as{" "}
-              <span className="text-white">
-                TensorFlow, Scikit-learn, Tableau, and Apache Spark
-              </span>
-              .
-            </span>
-
-            <span className="block">
-              I've worked on diverse projects — from forecasting Amazon review
-              trends and analyzing electric vehicle adoption patterns, to
-              developing web apps for disease prediction and phishing detection
-              — delivering results that merge statistical depth with real-world
-              value.
-            </span>
-
-            <span className="block">
-              I enjoy collaborating with cross-functional teams, continuously
-              learning, and turning data into meaningful, actionable insights.
-              Whether it’s designing ML models or visualizing data stories, I
-              bring{" "}
-              <span className="text-white">
-                curiosity, clarity, and commitment
-              </span>{" "}
-              to every project.
-            </span>
-
-            <span className="block">
-              Let’s connect and explore how we can create impactful, data-driven
-              solutions together.
-            </span>
+          <p className="text-gray-300 mb-6">
+            I'm <strong>Vibhav Misra</strong>, a data scientist with a strong foundation in data analysis, machine learning, and artificial intelligence. I specialize in designing and deploying predictive models and working with complex datasets to deliver data-driven insights. Proficient in Python, SQL, and tools like TensorFlow, Scikit-Learn, Tableau, and Power BI, I enjoy solving real-world challenges through innovative and scalable solutions.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> Frontend</h3>
+              <h3 className="text-xl font-bold mb-4"> Technical Skills </h3>
               <div className="flex flex-wrap gap-2">
                 {frontendSkills.map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
-                      "
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-            </div>
-
-            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> Backend</h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="mt-4 flex flex-wrap gap-2">
                 {backendSkills.map((tech, key) => (
                   <span
                     key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                      hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
-                      "
+                    className="bg-cyan-500/10 text-cyan-400 py-1 px-3 rounded-full text-sm hover:bg-cyan-500/20 
+                      hover:shadow-[0_2px_8px_rgba(34,211,238,0.2)] transition"
                   >
                     {tech}
                   </span>
@@ -123,55 +63,42 @@ export const About = () => {
             <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li>
-                <strong>Master of Science (MS) in Data Science</strong> – Pace
-                University, Seidenberg School of Computer Science and
-                Information Systems, New York, NY
-                <span className="block text-sm text-gray-400">
-                  Expected May 2026
-                </span>
+                <strong>MS in Data Science</strong> – Pace University, NY (May 2026)
               </li>
               <li>
-                <strong>
-                  Bachelor of Engineering (BE) in Computer Science
-                </strong>{" "}
-                – Chandigarh University, Apex Institute of Technology, India
-                <span className="block text-sm text-gray-400">
-                  Graduated June 2024
-                </span>
+                <strong>BE in Computer Science (AI & ML)</strong> – Chandigarh University (June 2024)
               </li>
               <li>
-                Specialization: Artificial Intelligence and Machine Learning
-              </li>
-              <li>
-                Relevant Coursework: Machine Learning Techniques, Business
-                Analytics & Tools, Business Data Management, NLP, Statistical
-                Analysis
+                Completed foundational and diploma-level coursework in Data Science from <strong>IIT Madras</strong>.
               </li>
             </ul>
           </div>
 
           <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-            <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+            <h3 className="text-xl font-bold mb-4"> 💼 Experience & Projects </h3>
             <div className="space-y-4 text-gray-300">
               <div>
-                <h4 className="font-semibold">
-                  {" "}
-                  Software Engineer at ABC Corp (2020 - Present){" "}
-                </h4>
+                <h4 className="font-semibold">Data Science Job Simulation – British Airways (Nov 2024)</h4>
                 <p>
-                  Developed and maintained microservices for cloud-based
-                  applications.
+                  Performed sentiment analysis on customer reviews and built a Random Forest model to predict booking behavior with 85% accuracy.
                 </p>
               </div>
-
               <div>
-                <h4 className="font-semibold">
-                  {" "}
-                  Intern at DEF Startups (2019){" "}
-                </h4>
+                <h4 className="font-semibold">Forecasting Amazon Review Ratings (Oct – Dec 2024)</h4>
                 <p>
-                  Assisted in building front-end components and integration REST
-                  APIs
+                  Used ARIMA, Prophet, and LSTM models for time series forecasting. Prophet achieved the lowest RMSE of 0.55.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold">BioML – Disease Prediction App (Jan – Apr 2024)</h4>
+                <p>
+                  Built a Flask web app for disease prediction using Scikit-Learn and symptom-based ML models with 90% validation accuracy.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold">Detecting Phishing Websites (Aug – Nov 2023)</h4>
+                <p>
+                  Developed a Gradient Boosting model to detect phishing websites and deployed it via Flask with 85% accuracy.
                 </p>
               </div>
             </div>
