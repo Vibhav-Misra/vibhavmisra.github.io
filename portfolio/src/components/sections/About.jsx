@@ -1,3 +1,5 @@
+import { Reveal } from "../Reveal";
+
 export const About = () => {
   const frontendSkills = ["JavaScript", "HTML", "CSS"];
   const backendSkills = [
@@ -15,7 +17,8 @@ export const About = () => {
   ];
 
   return (
-    <section
+   <Reveal>
+     <section
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
@@ -106,5 +109,6 @@ export const About = () => {
         </div>
       </div>
     </section>
+   </Reveal>
   );
 };

@@ -1,5 +1,5 @@
+import { Reveal } from "../Reveal";
 import { ProjectCard } from "./ProjectCard"; // adjust path if needed
- import "../Jupyter Notebooks"
  export const Projects = () => {
     const projects = [
         {
@@ -7,7 +7,7 @@ import { ProjectCard } from "./ProjectCard"; // adjust path if needed
           description:
             "Developed custom Python modules to compute Eigenvalues, PCA, and SVD, and compared their runtime and accuracy against NumPy and Scikit-learn implementations.",
           techStack: ["Python", "NumPy", "Scikit-learn"],
-          link:"../Jupyter Notebooks/Comparative Analysis of Matrix Factorization Techniques in Python.html",
+          link:"Jupyter Notebooks/Comparative Analysis of Matrix Factorization Techniques in Python.html",
         },
         {
           title: "Forecasting Amazon Review Ratings",
@@ -83,7 +83,8 @@ import { ProjectCard } from "./ProjectCard"; // adjust path if needed
       
 
   return (
-    <section
+    <Reveal>
+      <section
       id="projects"
       className="min-h-screen flex items-center justify-center py-20"
     >
@@ -105,5 +106,6 @@ import { ProjectCard } from "./ProjectCard"; // adjust path if needed
         </div>
       </div>
     </section>
+    </Reveal>
   );
 };

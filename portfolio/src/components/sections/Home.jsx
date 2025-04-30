@@ -1,6 +1,9 @@
+import { Reveal } from "../Reveal"
+
 export const Home = () => {
   return (
     <>
+    <Reveal>
       <section
         id="home"
         className="min-h-screen flex items-center justify-center relative"
@@ -32,6 +35,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      </Reveal>
     </>
   );
 };
